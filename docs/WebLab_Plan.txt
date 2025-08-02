@@ -1,0 +1,36 @@
+DevOps lab for web hosting and testing 
+    * Hosted on a VM running Ubuntu OS 24
+    * Version management using GIT
+    * System components should run in containers to isolated them applications with appropriate environment
+    * We envision the system to be divided along a client/server line
+      - Clients connect on the front end
+        -- clients are essential to studying the web service but are not the prime focus
+        -- clients can be either users interacting with a web browser or simulated web users implemented with scripts
+        -- we are interested in studying variations on the topology of the network where the clients reside
+        -- our initial guess our clients will require some programming with HTML, CSS, and JavaScipt
+        -- simulated clients will require scripting but the details are unknown at present
+      - Servers on the backend 
+        -- We are interested in scenarios where there is a single server for the entire backend and more advanced scenarios with the backend components split on multiple servers
+        -- We are completely open to how servers are hosted on VMs -- whether a server VM is hosted in our Lab VM or runs seperately as a guest on the bare metal machine
+    * We will implement the lab in stages
+      - Each stage will be based on a scenario such as a simple web server on a small LAN
+      - Stages will advance in complexity adding on to previous stages
+    * Our objectives are 
+      - To learn about the components necessary to run a web server and how to maintain/configure them
+      - To understand how the components of the web stack interact 
+      - To learn how to adjust and monitor the performance of the web stack
+      - To learn how to setup and monitor security measures for the web stack
+      - To experiment with various network options and topologies
+
+What we are requesting from chatGPT:
+    * Suggestions for a  hypervisor, but leaning towards Virt-Manager
+    * Suggestions client side (frontend) components
+    * Suggestions for implementing the clients that permits a combination of mutiple interactive clients and scripted clients 
+    * Suggestions for server side (backend) components
+    * Suggestions for implementing the server side
+      * Initially a single web server and database, but expandable to mutiple web servers and databases
+      * Initially a simple direct between a few clients on a small LAN, but then expandable to introduce various APIs, middleware, and security control for studying more complicated scenarios
+    * Suggestions for how to setup the network for the Dev Lab
+    * Suggestions for container management
+    * Suggestions for how to script setup of VMs that can be maintained in GIT
+

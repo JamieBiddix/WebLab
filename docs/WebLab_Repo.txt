@@ -1,0 +1,23 @@
+I'm a new GitHub user and would like to setup a repository for a project that I have in mind.  My project is to establish a laboratory environment for experimenting with concepts and methods for implementing integrated web application platforms.  I'm a student in this area and have not formed a sufficient understanding of everything that will be involved in this endeavor so I need your assistance with setting up and configuring a new GitHub repository for keeping scripts, configuration files, documents, etc..  In addition to suggestions for setting up a GitHub repository, any comments about additional steps to establishing an evironment for working towards this objective would be appreciated. Here are some parameters that I think should apply to my project:
+
+* There are multiple people participating in this project.
+* We plan to follow, very loosely, an agile development process centered on a simple scrum board.
+* We plan to make extensive use of AI chats for guidance in implenting the components of our web application platform experiments and need a wiki that will incorporate the chat suggestions along with our own notes.
+* During the course of this project we will be required to deploy a webserver, test and monitor system components, test and monitor security measures.
+
+Each participant in this project has the following common resources:
+* a mac computer with at least 8GB of RAM that is intended to be used as a desktop workstation,
+* an Intel based PC with at least 32GB of RAM and running Ubuntu Server version 24 accessible by the mac workstation by ssh.
+
+We foresee that it might be helpful to distinguish within our project between Backend and Frontend products.
+
+From the studies we have made in this area we anticipate the following needs in the backend side of the project:
+* using Apache primarily for the web server but are open to experimenting with other options,
+* using MySQL and postgresql for databases,
+* support for php, javascript and python.
+
+On the frontend we anticipate using tools such as Python and Javascript frameworks and libraries in conjunction with text editors such as Neovim.
+
+We anticipate using containers to isolate backend components such Apache and MySQL in their own running environments, and a need for tools for managing the containers.
+
+We anticipate using virtual machines to simulate web users that access our web server.
