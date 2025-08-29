@@ -1,0 +1,5 @@
+Simple Web Server
+   * Webserver, nginx or apache, running in docker container
+   * One single page Hello World website
+   * Access webpage from web browser on host machine
+   * Monitor network traffic with Wireshark

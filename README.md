@@ -1,2 +1,4 @@
-# WebLab
-Laboratory Environment for Serving Web Pages
+00000000: 2320 5765 624c 6162 0a4c 6162 6f72 6174  # WebLab.Laborat
+00000010: 6f72 7920 456e 7669 726f 6e6d 656e 7420  ory Environment 
+00000020: 666f 7220 5365 7276 696e 6720 5765 6220  for Serving Web 
+00000030: 5061 6765 730a                           Pages.
