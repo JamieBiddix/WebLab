@@ -1,0 +1,37 @@
+Component Analysis:
+   * Break down components
+     - WebServer -> Server Software, Server Configured Items, Container, Container Configured Items
+     - Clients -> Browsers, Scripted Clients, Scripts, Configuration Items
+     - WebContent -> HTML
+     - NetworkMonitor -> Monitor App, Container, Container Configured Items
+     - HostEnvironment -> MacOS, Windows 11 with WSL, Ubuntu Linux
+     - VersionControl (Project Level Item) -> Local repositories, GitHub
+
+  Let's distinguish between the WebServer software, Nginx or Apache, and the Ubuntu server that hosts the WebServer which I will call the Backend Server.
+  Now rename the WebServer part to Backend Server
+  Associated with the Backend Server part are particular are:
+     Docker Container
+     Nginx WebServer
+     Apache WebServer
+     Web content
+
+Interface Analysis:
+  Interface Docker Container/WebServer -> file system, systemd or CLI, network
+  It's convenient to have the terms Nginx Backend Server and Apache Backend Server which look like:
+     Ubuntu Server > Docker Container > WebServer (Nginx or Apache), Web Content
+
+   * Interfaces: Component to Component
+     - WebServer/Clients -> network HTTP or HTTPS
+     - WebServer/WebContent -> config updates, data directories
+     - NetworkMonitor/{WebServer,Clients,HostEnvironment} -> filters, user settings, 
+
+   * Interfaces: Actor to Component
+     - Admin/Backend Server -> config, web content data
+     - Admin/Clients -> Scripts
+     - Site Designers/WebContent -> web content data
+     - System Engineers, Testers, Data Scientists/WebContent -> web content data
+     - System Engineers, Testers, Data Scientists/WebServer -> config
+     - System Engineers, Testers, Data Scientists/Clients -> scripts and browsers
+     - System Engineers, Testers, Data Scientists/NetworkMonitor -> filters, user settings, data collection
+
+  Components:
