@@ -1,0 +1,30 @@
+Simple Web Server
+  Purpose:
+   * Part of laboratory for studying Web DevOps
+     -- understanding of technology associated with producing and serving web content on a computer network
+     -- understanding the role of systems engineering in Web DevOps
+     -- understanding tools for systems engineering in Web DevOps
+   * Establish ground work for further study on more sophisticated scenarios
+
+  Components:
+   * Webserver, nginx or apache, running in docker container
+   * One web page on the webserver consisting of a single Hello World page
+   * Web browsers for accessing the web page
+   * Wireshark network monitor
+
+  Behavior of Interest:
+   * Network protocols
+   * Effect of configuration parameters
+   * Effect of network options
+   * Effect of hardware variations
+
+   * Webserver, browsers, and wireshark monitor all run on a single host computer
+   * All components are maintained under version control on GitHub
+   * Actors and their roles under this scenario include:
+     -- administrators: maintain and configure the system and its environment
+     -- configuration manager: maintain the GitHub repository
+     -- system engineers: design system, analyze system performance, and assess quality of service
+     -- site designers: create and post the web page elements
+     -- testers: verification and validation of system meeting requirements
+     -- users: access website from browsers
+     -- data scientists: observe system behavior, characterize observed data, assess conformity observations with expected behavior
